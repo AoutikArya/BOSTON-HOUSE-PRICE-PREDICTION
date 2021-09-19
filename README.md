@@ -17,3 +17,4 @@ TAX: full-value property-tax rate per $10,000
 PTRATIO: pupil-teacher ratio by town 12. B: 1000(Bk−0.63)2 where Bk is the proportion of blacks by town 13. LSTAT: % lower status of the population
 MEDV: Median value of owner-occupied homes in $1000s
 We can see that the input attributes have a mixture of units.
+.

@@ -79,5 +79,6 @@ rmse=math.sqrt(mse)
 # In[ ]:
 
 
-mae,
+print(mae)
+print(mse)
 

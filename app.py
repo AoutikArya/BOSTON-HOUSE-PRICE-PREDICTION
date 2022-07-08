@@ -7,6 +7,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from PIL import Image
+image = Image.open('house.png')
+
+# Title
+st.image(image, width=600)
 
 # Title
 st.header("Boston House Price Prediction")

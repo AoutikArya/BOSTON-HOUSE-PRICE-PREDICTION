@@ -19,7 +19,7 @@ ptratio = st.number_input("Enter PTRATIO")
 b = st.number_input("Enter B")
 lstat = st.number_input("Enter Lstat")
 chas = st.selectbox("Select CHAS", (0, 1))
-if st.button("Submit"):
+if st.button("Predict"):
     lr = joblib.load("lr.pkl")
     X=pd.DataFrame([[crim,zn,indus,nox,rm,age,dis,rad,tax,ptratio,b,lstat,chas]],
                    columns=['CRIM', 'ZN', 'INDUS', 'NOX', 'RM', 'AGE',

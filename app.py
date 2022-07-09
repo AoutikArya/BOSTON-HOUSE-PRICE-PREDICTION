@@ -19,8 +19,7 @@ b = st.number_input("Enter B")
 lstat = st.number_input("Enter Lstat")
 chas = st.selectbox("Select CHAS", (0, 1))
 
-if st.button("Submit"):
-    
+if st.button("Submit"):   
     # Unpickle classifier
     lr = joblib.load("lr.pkl")
     X=pd.DataFrame([[crim,zn,indus,nox,rm,age,dis,rad,tax,ptratio,b,lstat,chas]],
@@ -28,7 +27,3 @@ if st.button("Submit"):
            'PTRATIO', 'B', 'LSTAT','CHAS'])
     prediction = lr.predict(X)[0]               
     st.text(f"The house price is  {prediction}")     
-
-
-
-
